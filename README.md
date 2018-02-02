@@ -6,12 +6,12 @@ Android exposes the [Network Stats API](https://developer.android.com/reference/
 **Aren't there thousands of these type of apps?**  There are many applications designed around checking you do not exceed your data allowance or checking data use in the last 7 or 30 days.  There are far fewer apps out there which allow you to specify a specific time to start logging and then export those results for later analysis.  Other apps will obsfucate how they tally up data usage, are difficult to verify and also group many applications into 'System' whereas I would like to have greater granularity than that. 
 
 ## Credits
-The look and feel of this app as well as the bootstrapping is taken from https://github.com/RobertZagorski/NetworkStats so full credit to the author of that app.  I needed to make a couple of fixes to how data is returned (see https://github.com/RobertZagorski/NetworkStats/issues/2) & add a lot of functionality but full credit to the author of that app for the look & feel and core functionality.  https://github.com/RobertZagorski/NetworkStats does not have any license specified therefore I have not specified a license type for this app.   
+The look and feel of this app as well as the bootstrapping is taken from https://github.com/RobertZagorski/NetworkStats.  I needed to make a couple of fixes to how data is returned (see https://github.com/RobertZagorski/NetworkStats/issues/2) & add a lot of functionality but full credit to the author of that app for the look & feel and core functionality.  https://github.com/RobertZagorski/NetworkStats does not have any license specified therefore I have not specified a license type for this app.   
 
 ## Screenshots
-![Options](https://raw.githubusercontent.com/darryncampbell/Network-Stats-Logger/master/screenshots/1.png)
-![Retrieving stats](https://raw.githubusercontent.com/darryncampbell/Network-Stats-Logger/master/screenshots/2.png)
-![Stats](https://raw.githubusercontent.com/darryncampbell/Network-Stats-Logger/master/screenshots/3.png)
+![Options](https://raw.githubusercontent.com/darryncampbell/Network-Stats-Logger/master/screenshots/1.jpg)
+![Retrieving stats](https://raw.githubusercontent.com/darryncampbell/Network-Stats-Logger/master/screenshots/2.jpg)
+![Stats](https://raw.githubusercontent.com/darryncampbell/Network-Stats-Logger/master/screenshots/3.jpg)
 
 ## Requesting permissions
 This application requires several runtime permissions as well as the ability to monitor usage stats.  All permissions are requested when the app is first launched and should be accepted by the user.  If you do not accept the permissions at launch then you can request them later through the menu.  **This is just a test app so if you don't accept permissions you may experience unexpected behaviour**
