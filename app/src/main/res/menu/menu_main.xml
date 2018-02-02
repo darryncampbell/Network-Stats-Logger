@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.darryncampbell.networkstatslogger.MainActivity">
+    <item
+        android:id="@+id/menu_request_permissions"
+        android:orderInCategory="100"
+        android:title="@string/menu_request_permissions"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_start_test"
+        android:orderInCategory="101"
+        android:title="@string/menu_start_test"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_update_stats"
+        android:orderInCategory="102"
+        android:title="@string/menu_update_stats"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_update_stats_and_log"
+        android:orderInCategory="103"
+        android:title="@string/menu_update_stats_and_log"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_stop_test"
+        android:orderInCategory="104"
+        android:title="@string/menu_stop_test"
+        app:showAsAction="never" />
+</menu>

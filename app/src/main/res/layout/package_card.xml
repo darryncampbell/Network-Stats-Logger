@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="8dp"
+            tools:text="Package name"/>
+
+        <TextView
+            android:id="@+id/package_uid"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:padding="4dp"
+            tools:text="Package uid"/>
+
+        <TextView
+            android:id="@+id/package_name"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/package_uid"
+            android:padding="4dp"
+            tools:text="com.package.id"/>
+
+        <TextView
+            android:id="@+id/lblBytesReceivedTitle"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/package_name"
+            android:padding="4dp"
+            android:text="Rx Data: "/>
+
+        <TextView
+            android:id="@+id/lblReceivedTotal"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/lblBytesReceivedTitle"
+            android:layout_toEndOf="@+id/lblBytesReceivedTitle"
+            android:padding="4dp"
+            android:text="0 (Total)" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/received_data_wifi_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignTop="@+id/lblReceivedTotal"
+            android:layout_toEndOf="@+id/lblReceivedTotal"
+            android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/lblReceivedWifi"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/received_data_wifi_icon"
+            android:layout_toEndOf="@+id/received_data_wifi_icon"
+            android:padding="4dp"
+            android:text="0" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/received_data_mobile_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignTop="@+id/lblReceivedWifi"
+            android:layout_toEndOf="@+id/lblReceivedWifi"
+            android:padding="4dp"/>
+
+
+        <TextView
+            android:id="@+id/lblReceivedMobile"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/received_data_mobile_icon"
+            android:layout_toEndOf="@+id/received_data_mobile_icon"
+            android:padding="4dp"
+            android:text="0 (WAN)" />
+
+        <TextView
+            android:id="@+id/lblBytesTransmittedTitle"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblBytesReceivedTitle"
+            android:padding="4dp"
+            android:text="Tx Data: "/>
+
+        <TextView
+            android:id="@+id/lblTransmittedTotal"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/lblBytesTransmittedTitle"
+            android:layout_toEndOf="@+id/lblBytesTransmittedTitle"
+            android:padding="4dp"
+            android:text="0 (Total)" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/transmitted_data_wifi_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignTop="@+id/lblTransmittedTotal"
+            android:layout_toEndOf="@+id/lblTransmittedTotal"
+            android:padding="4dp"/>
+
+        <TextView
+            android:id="@+id/lblTransmittedWifi"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/transmitted_data_wifi_icon"
+            android:layout_toEndOf="@+id/transmitted_data_wifi_icon"
+            android:padding="4dp"
+            android:text="0 (Wifi)" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/transmitted_data_mobile_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignTop="@+id/lblTransmittedWifi"
+            android:layout_toEndOf="@+id/lblTransmittedWifi"
+            android:padding="4dp"/>
+
+
+
+        <TextView
+            android:id="@+id/lblTransmittedMobile"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/transmitted_data_mobile_icon"
+            android:layout_toEndOf="@+id/transmitted_data_mobile_icon"
+            android:padding="4dp"
+            android:text="0 (WAN)" />
+
+
+
+        <TextView
+            android:id="@+id/lblPacketsReceivedTitle"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblBytesTransmittedTitle"
+            android:padding="4dp"
+            android:text="Rx Packets: "/>
+
+        <TextView
+            android:id="@+id/lblReceivedPacketsTotal"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/lblPacketsReceivedTitle"
+            android:layout_toEndOf="@+id/lblPacketsReceivedTitle"
+            android:padding="4dp"
+            android:text="0 (Total)" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/received_packets_wifi_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignTop="@+id/lblReceivedPacketsTotal"
+            android:layout_toEndOf="@+id/lblReceivedPacketsTotal"
+            android:padding="4dp"/>
+
+
+        <TextView
+            android:id="@+id/lblReceivedPacketsWifi"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/received_packets_wifi_icon"
+            android:layout_toEndOf="@+id/received_packets_wifi_icon"
+            android:padding="4dp"
+            android:text="0 (Wifi)" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/received_packets_mobile_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignTop="@+id/lblReceivedPacketsWifi"
+            android:layout_toEndOf="@+id/lblReceivedPacketsWifi"
+            android:padding="4dp"/>
+
+
+        <TextView
+            android:id="@+id/lblReceivedPacketsMobile"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/received_packets_mobile_icon"
+            android:layout_toEndOf="@+id/received_packets_mobile_icon"
+            android:padding="4dp"
+            android:text="0 (WAN)" />
+
+        <TextView
+            android:id="@+id/lblPacketsTransmittedTitle"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lblReceivedPacketsTotal"
+            android:padding="4dp"
+            android:text="Tx Packets: "/>
+
+        <TextView
+            android:id="@+id/lblTransmittedPacketsTotal"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/lblPacketsTransmittedTitle"
+            android:layout_toEndOf="@+id/lblPacketsTransmittedTitle"
+            android:padding="4dp"
+            android:text="0 (Total)" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/transmitted_packets_wifi_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignTop="@+id/lblTransmittedPacketsTotal"
+            android:layout_toEndOf="@+id/lblTransmittedPacketsTotal"
+            android:padding="4dp"/>
+
+
+        <TextView
+            android:id="@+id/lblTransmittedPacketsWifi"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/transmitted_packets_wifi_icon"
+            android:layout_toEndOf="@+id/transmitted_packets_wifi_icon"
+            android:padding="4dp"
+            android:text="0 (Wifi)" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/transmitted_packets_mobile_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignTop="@+id/lblTransmittedPacketsWifi"
+            android:layout_toEndOf="@+id/lblTransmittedPacketsWifi"
+            android:padding="4dp"/>
+
+
+        <TextView
+            android:id="@+id/lblTransmittedPacketsMobile"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/transmitted_packets_mobile_icon"
+            android:layout_toEndOf="@+id/transmitted_packets_mobile_icon"
+            android:padding="4dp"
+            android:text="0 (WAN)" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/icon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
