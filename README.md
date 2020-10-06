@@ -1,3 +1,6 @@
+*Please be aware that this application / sample is provided as-is for demonstration purposes without any guarantee of support*
+=========================================================
+
 # Network Stats Logger
 This application is designed to determine the amount of data being sent and received by the applications on your Android device in a controlled fashion.
 
